@@ -1,5 +1,5 @@
 body{
-    background-image: url("gemini2.png");
+    background-image: url("glass.avif");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -9,7 +9,10 @@ body{
    height: 50vh;
    width: 20vw;
     border-radius: 20px;
-    box-shadow: 5px 7px 5px silver;
+    background-color:rgba(255,255,255,0.1) ;
+    border: 1px solid rgba(255,255,255,0.3);
+    -webkit-backdrop-filter: blur(10px);
+    color: rgba(255, 255, 255,0.7);
 
     
 }
@@ -17,12 +20,9 @@ body{
     display: fixed;
     text-align: center;
 }
-.login_detail{
-    background-color: aliceblue;
-}
 .lb{
     padding: 20px 10px 60px;
-    color: rgb(255, 140, 0);
+    color:rgba(255, 255, 255,0.7);
     font-size: large;
     font-weight: bolder;
     font-style: italic;
@@ -37,19 +37,19 @@ input{
     border-radius:20px;
     border: 1px solid saddlebrown ;
 }
-input::placeholder{
-    color: rgb(255, 140, 0);
-}
+
 .button{
-display: flex;
+display: grid;
+grid-template-columns: repeat();
     justify-content: center;
-    align-items: center;
+    
+    gap: 15px;
 }
 #btn{
     height: 20px;
     width: 55px;
     font-size: small;
-    border: 1px solid saddlebrown;
     border-radius: 20px;
-    background-color: rgb(255, 140, 0);
+    background-color: rgba(230, 136, 245, 0.7);
+    border: 1px solid rgba(255, 255, 255, 1);
 }
