@@ -5,7 +5,9 @@
             Welcome
         </title>
         <link rel="stylesheet" href="home.css">
+        
     </head>
+   
     <body>
         <div class = "Box">
         <h2 id = "head">Login</h2>
@@ -16,7 +18,7 @@
             <label class="lb">Email</label>
         </td>
            <td>
-            <input type="email" placeholder="Enter your email"/>
+            <input type="email" name="email" placeholder="Enter your email"/>
         </td>
     </tr>
     <br><br/>
@@ -25,16 +27,17 @@
                 <lable class="lb">Password</lable>
             </td>
           <td>
-             <input type="password" placeholder="Enter correct Password"/>
+             <input type="password" name="password" placeholder="Enter correct Password"/>
             </td>
         </tr>
         </form>
         </table>
         <br><br>
         <div class="button">
-        <button type="submit" id="btn">Submit</button>
+        <button type="button" id="btn">Submit</button>
           <a href="register.html" style="color: white; font-size: 15px; margin-left: 3px;">Sign up</a>
         </div>
         </div>
+         <script src="script.js"></script>
     </body>
 </html>

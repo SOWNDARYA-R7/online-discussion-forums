@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="register.css">
+   
     <title>Registration</title>
 </head>
+ 
 <body>
     <div class = "division">
         <h2 id ="h2">Registration</h2>
@@ -13,26 +15,27 @@
                             Username
                         </lable>
                    
-                        <input type="text" placeholder="eg: johndoe"/>    
+                        <input type="text" name="username" placeholder="eg: johndoe"/>    
                    
                         <lable>
                             Email
                         </lable>
-                   <input type="email" placeholder="eg: johndoe@gmail.com">
+                   <input type="email" name="email" placeholder="eg: johndoe@gmail.com">
                     
                         <lable>
                             Password
                         </lable>
                    
-                        <input type="password" placeholder="must contains 6 characters">
+                        <input type="password" name="password" placeholder="must contains 6 characters">
                    
                 </div>
         <br><br>
 
         <div>
-            <button type="submit" id = "btn2"> Register</button><br><br>
+            <button type="button" id = "btn2"> Register</button><br><br>
             <a href="home.html" style="color: white; font-size: small;">Already have account</a>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
