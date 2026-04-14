@@ -2,54 +2,81 @@ body{
     background-image: url("glass.avif");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
 }
 .Box{
-   margin-top: 30vh;
-   margin-left: 40vw;
-   height: 50vh;
-   width: 20vw;
-    border-radius: 20px;
-    background-color:rgba(255,255,255,0.1) ;
-    border: 1px solid rgba(255,255,255,0.3);
-    -webkit-backdrop-filter: blur(10px);
-    color: rgba(255, 255, 255,0.7);
-
-    
+   margin: 20vh auto;
+   padding: 40px;
+   height: auto;
+   width: 400px;
+   border-radius: 20px;
+   background-color:rgba(255,255,255,0.1);
+   border: 1px solid rgba(255,255,255,0.3);
+   -webkit-backdrop-filter: blur(10px);
+   color: rgba(255, 255, 255,0.9);
+   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 #head{
-    display: fixed;
     text-align: center;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.tb {
+    width: 100%;
 }
 .lb{
-    padding: 20px 10px 60px;
-    color:rgba(255, 255, 255,0.7);
-    font-size: large;
+    padding-bottom: 10px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 18px;
     font-weight: bolder;
     font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    margin-top: 15px;
 }
-
 input{
-    size: 30px;
-    width: 150px;
-    height: 20px;
-    padding: 7px 10px 5px;
-    border-radius:20px;
-    border: 1px solid saddlebrown ;
+    width: 100%;
+    box-sizing: border-box;
+    height: 45px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
 }
-
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+input:focus {
+    outline: none;
+    border-color: rgba(230, 136, 245, 1);
+    background-color: rgba(255, 255, 255, 0.1);
+}
 .button{
-display: grid;
-grid-template-columns: repeat();
-    justify-content: center;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 15px;
+    margin-top: 30px;
 }
 #btn{
-    height: 20px;
-    width: 55px;
-    font-size: small;
-    border-radius: 20px;
-    background-color: rgba(230, 136, 245, 0.7);
-    border: 1px solid rgba(255, 255, 255, 1);
+    height: 45px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+    background: linear-gradient(135deg, rgba(230, 136, 245, 0.8), rgba(160, 32, 240, 0.8));
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+#btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(230, 136, 245, 0.6);
 }

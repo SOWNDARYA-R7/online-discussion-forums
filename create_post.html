@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="create+post.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div id="nav">
+        <button id="homeBtn">Home Feed</button>
+        <button id="logoutBtn">Logout <img id="imlog" src="logout.png"/></button>
+    </div>
+    
+    <div class="container">
+        <!-- Profile Area -->
+        <div class="glass-box profile-box">
+            <div class="profile-img-container">
+                <img id="icon" src="profile.jpg" alt="icon"/>
+                <label for="profilePicUpload" class="upload-btn">Change Picture</label>
+                <input type="file" id="profilePicUpload" accept="image/*" style="display:none;"/>
+            </div>
+            <h2 id="usernameDisplay">Welcome!</h2>
+        </div>
+
+        <!-- Create Post Area -->
+        <div class="glass-box create-box">
+            <h2>Create a Discussion</h2>
+            <form id="createPostForm">
+                <input type="text" id="postTitle" placeholder="Discussion Title" required />
+                <textarea id="postContent" placeholder="What's on your mind?" required></textarea>
+                <button type="submit" id="submitPostBtn">Post</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

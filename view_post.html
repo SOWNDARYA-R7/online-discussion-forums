@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="view_post.css">
+    <title>View Discussion</title>
+</head>
+<body>
+    <div id="nav">
+        <button id="backBtn">Back to Feed</button>
+    </div>
+    
+    <div class="post-container">
+        <div class="glass-box main-post" id="postDetails">
+            <h1 id="vpTitle">Loading...</h1>
+            <p class="meta" id="vpMeta"></p>
+            <div class="content" id="vpContent"></div>
+        </div>
+
+        <div class="glass-box comments-section">
+            <h3>Comments</h3>
+            <div id="commentsList">
+                <!-- Comments injected via JS -->
+            </div>
+            
+            <form id="commentForm">
+                <textarea id="commentContent" placeholder="Write a comment..." required></textarea>
+                <button type="submit" id="submitCommentBtn">Add Comment</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

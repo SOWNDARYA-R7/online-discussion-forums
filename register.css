@@ -1,45 +1,80 @@
 body{
-    
-    background-image:url("glass.avif") ;
+    background-image:url("glass.avif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
+    background-attachment: fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
 } 
-#h2{
-    text-align:center;  
-    color: rgba(255, 255, 255, 0.8);
-}
 .division{
-  
-  margin-left: 40vw;
-  width: 300px;
-  height:350px;
-  margin-top: 25vh;
-  border-radius: 15px;
+  margin: 15vh auto;
+  width: 450px;
+  height: auto;
+  border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.1);
   text-align: center;
-  padding: 20px;
+  padding: 40px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 18px;
   -webkit-backdrop-filter: blur(10px);
-
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  box-sizing: border-box;
+}
+#h2{
+    text-align:center;  
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 .box-content{
-    margin-top:50px;
-    display: grid;
-    grid-template-columns:repeat(2,1fr);
-    gap: 15px;;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+}
+lable {
+    margin-top: 15px;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 18px;
 }
 input{
-    border-radius: 10px;
-    height: 25px;
+    border-radius: 25px;
+    height: 45px;
+    padding: 10px 15px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: 0.3s;
 }
-
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+input:focus {
+    outline: none;
+    border-color: rgba(230, 136, 245, 1);
+    background-color: rgba(255, 255, 255, 0.1);
+}
 #btn2{
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.7);
-    background-color: rgba(230, 136, 245, 0.7);
+    margin-top: 30px;
+    height: 45px;
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: linear-gradient(135deg, rgba(230, 136, 245, 0.8), rgba(160, 32, 240, 0.8));
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
-  
+#btn2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(230, 136, 245, 0.6);
+}
